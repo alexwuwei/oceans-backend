@@ -1,0 +1,37 @@
+{
+  "name": "oceans-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwuwei/oceans-backend.git"
+  },
+  "author": "Hugo A Guerra <guerrahugoa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwuwei/oceans-backend/issues"
+  },
+  "homepage": "https://github.com/alexwuwei/oceans-backend#readme",
+  "devDependencies": {
+    "body-parser": "^1.16.1",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.0.1",
+    "mocha": "^3.2.0",
+    "mongodb": "^2.2.24"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "mongoose": "^4.8.4"
+  }
+}
