@@ -3,6 +3,7 @@
 const bodyParser = require('body-parser');
 const Bottle = require(__dirname + '/../models/bottles-model');
 
+const helpers = require('./bottles-helpers');
 
 module.exports = (apiRouter) => {
   apiRouter.route('/bottles')
