@@ -3,15 +3,20 @@
 const bodyParser = require('body-parser');
 const Bottle = require(__dirname + '/../models/bottles-model');
 
+const helpers = require('./bottles-helpers');
 
 module.exports = (apiRouter) => {
   apiRouter.route('/bottles')
     .get((req, res) => {
       console.log('GET route hit for /bottles');
-      Bottle.find({}).exec((err, bottles) => {
+      // const bottles = [helpers.createResponse();
+      Bottle.find({}).limit(3).then((err, bottles) => {
         res.json(bottles);
-        res.end();
-      });
+   });
+      // const bottles = [];
+      //   res.json(bottles);
+      //   res.end();
+    
 
     })
     .post((req, res) => {
